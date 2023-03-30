@@ -1,10 +1,10 @@
 const getMiddle = (str) => {
   const length = str.length;
   let mid = length / 2;
-  if (mid % 2 === 0) {
-    return str[mid - 1] + str[mid];
-  } else {
+  if (length % 2) {
     return str[Math.floor(mid)];
+  } else {
+    return str[mid - 1] + str[mid];
   }
 };
 
